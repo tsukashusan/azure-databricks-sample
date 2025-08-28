@@ -1,0 +1,63 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Azure OpenAI Sample Source",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/vscode/devcontainers/base:latest",
+	"runArgs": ["--platform=linux/amd64"],
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	"features": {
+		"ghcr.io/devcontainers/features/azure-cli:1.2.7": {
+			"version": "2.76.0"
+		},
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.13",
+            "toolsToInstall": [
+                "pip"
+            ]
+        },
+		"ghcr.io/devcontainers/features/common-utils:2.5.4": {
+			"installOhMyZsh": true,
+			"configureZshAsDefaultShell": true
+		},
+		"ghcr.io/devcontainers/features/powershell:1": {
+			"version": "7.5.2"
+		},
+		"ghcr.io/azure/azure-dev/azd:latest": {
+			"version": "1.18.2"
+		}
+	},
+	// Configure tool-specific properties.
+	// "customizations": {},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+                "ms-python.vscode-pylance",
+                "streetsidesoftware.code-spell-checker",
+                "charliermarsh.ruff",
+                "tamasfe.even-better-toml",
+                "ms-azuretools.vscode-docker",
+				"ms-vscode.PowerShell",
+				"ms-toolsai.jupyter"
+			],
+			"settings": {
+				"dev.containers.dokerCredentialHelper": false
+			}
+		}
+	},
+    "mounts": [
+		"source=devcontainer-zshhistory,target=/commandhistory,type=volume"
+    ],
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
+	"remoteUser": "vscode",
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"onCreateCommand": "sudo sh -c \"echo 'nameserver 8.8.8.8' >> /etc/resolv.conf\";sudo sh -c  \"curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh\"",
+	//"postCreateCommand": "sudo sh -c \". ./.devcontainer/post_create.sh\";pip install --upgrade pip;pip install -r ./requirements.txt"
+}

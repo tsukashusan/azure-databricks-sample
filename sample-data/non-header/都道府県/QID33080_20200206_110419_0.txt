@@ -1,0 +1,7 @@
+"フクシマケン","福島県","FUKUSHIMA","Tohoku","東北"
+"クマモトケン","熊本県","KUMAMOTO","Kyushu","九州"
+"ニイガタケン","新潟県","NIIGATA","Chubu","中部"
+"トヤマケン","富山県","TOYAMA","Chubu","中部"
+"ヤマグチケン","山口県","YAMAGUCHI","Chugoku","中国"
+"シズオカケン","静岡県","SHIZUOKA","Chubu","中部"
+"イシカワケン","石川県","ISHIKAWA","Chubu","中部"

@@ -1,0 +1,6 @@
+"フクイケン","福井県","FUKUI","Chubu","中部"
+"ヒロシマケン","広島県","HIROSHIMA","Chugoku","中国"
+"トットリケン","鳥取県","TOTTORI","Chugoku","中国"
+"ワカヤマケン","和歌山県","WAKAYAMA","Kinki","近畿"
+"ヤマガタケン","山形県","YAMAGATA","Tohoku","東北"
+"シマネケン","島根県","SHIMANE","Chugoku","中国"

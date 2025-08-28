@@ -1,0 +1,8 @@
+"ミヤギケン","宮城県","MIYAGI","Tohoku","東北"
+"ホッカイドウ","北海道","HOKKAIDO","Hokkaido","北海道"
+"カガワケン","香川県","KAGAWA","Shikoku","四国"
+"ナガサキケン","長崎県","NAGASAKI","Kyushu","九州"
+"トウキョウト","東京都","TOKYO","Kanto","関東"
+"エヒメケン","愛媛県","EHIME","Shikoku","四国"
+"イバラキケン","茨城県","IBARAKI","Kanto","関東"
+"オオサカフ","大阪府","OSAKA","Kinki","近畿"
